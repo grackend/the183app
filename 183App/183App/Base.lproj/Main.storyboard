@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="s1t-Ls-j7j">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
         <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
@@ -167,6 +167,69 @@
             </objects>
             <point key="canvasLocation" x="750" y="1090"/>
         </scene>
+        <!--More-->
+        <scene sceneID="Xpk-kp-nex">
+            <objects>
+                <viewController title="More" id="s1t-Ls-j7j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8eT-N5-yDn"/>
+                        <viewControllerLayoutGuide type="bottom" id="cA2-QN-nV4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xzy-Rp-cpd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C44-dq-g0N" userLabel="Calendar">
+                                <rect key="frame" x="113" y="-152" width="106" height="103"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                <state key="normal" title="Calendar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-3Q-4r8">
+                                <rect key="frame" x="0.0" y="-8" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR0-0A-G5e" userLabel="Calendar">
+                                        <rect key="frame" x="31" y="263" width="106" height="103"/>
+                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                        <state key="normal" title="Calendar" image="Piazza">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-nf-bQ7" userLabel="Calendar">
+                                        <rect key="frame" x="184" y="118" width="106" height="103"/>
+                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                        <state key="normal" title="Calendar" image="Staff">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-Uv-cnc" userLabel="Calendar">
+                                        <rect key="frame" x="184" y="263" width="106" height="103"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                        <state key="normal" title="Calendar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cJ-6D-uYZ" userLabel="Calendar">
+                                        <rect key="frame" x="31" y="118" width="106" height="103"/>
+                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                        <state key="normal" title="Calendar" image="Clock">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="678-HN-Cxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="1856"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="OUy-Ed-ulO">
             <objects>
@@ -187,6 +250,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Clock" width="186" height="196"/>
+        <image name="Piazza" width="214" height="196"/>
+        <image name="Staff" width="244" height="232"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

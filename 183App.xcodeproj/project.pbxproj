@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		29D559CE19BB628F00542E71 /* 183App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 183App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D559D219BB628F00542E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29D559D319BB629000542E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29D559D519BB629000542E71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29D559D319BB629000542E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = /Users/gracekendall/Documents/183App/183App/AppDelegate.swift; sourceTree = "<absolute>"; };
+		29D559D519BB629000542E71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = /Users/gracekendall/Documents/183App/183App/ViewController.swift; sourceTree = "<absolute>"; };
 		29D559D819BB629000542E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29D559DA19BB629000542E71 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		29D559E019BB629000542E71 /* 183AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 183AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -397,6 +397,7 @@
 				29D559EC19BB629000542E71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29D559ED19BB629000542E71 /* Build configuration list for PBXNativeTarget "183AppTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +406,7 @@
 				29D559EF19BB629000542E71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
