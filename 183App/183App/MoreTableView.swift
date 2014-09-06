@@ -12,6 +12,10 @@ import UIKit
 class MoreTableView: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     let allTabTitles = ["Calendar", "Piazza", "Projects", "Staff", "Syllabus"]
     
+    
+    
+    
+    
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         return allTabTitles.count
     }

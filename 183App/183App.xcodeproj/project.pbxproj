@@ -14,6 +14,7 @@
 		29D55A0819BB62C900542E71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D55A0719BB62C900542E71 /* Images.xcassets */; };
 		29D55A1419BB62C900542E71 /* _83AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D55A1319BB62C900542E71 /* _83AppTests.swift */; };
 		29D55A1E19BB683900542E71 /* MoreTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D55A1D19BB683900542E71 /* MoreTableView.swift */; };
+		29D55A2219BB6FED00542E71 /* SideBarTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D55A2119BB6FED00542E71 /* SideBarTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		29D55A1219BB62C900542E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D55A1319BB62C900542E71 /* _83AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _83AppTests.swift; sourceTree = "<group>"; };
 		29D55A1D19BB683900542E71 /* MoreTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableView.swift; sourceTree = "<group>"; };
+		29D55A2119BB6FED00542E71 /* SideBarTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				29D55A0019BB62C900542E71 /* FirstViewController.swift */,
 				29D55A0219BB62C900542E71 /* SecondViewController.swift */,
 				29D55A0419BB62C900542E71 /* Main.storyboard */,
+				29D55A2119BB6FED00542E71 /* SideBarTabView.swift */,
 				29D55A1D19BB683900542E71 /* MoreTableView.swift */,
 				29D55A0719BB62C900542E71 /* Images.xcassets */,
 				29D559FC19BB62C900542E71 /* Supporting Files */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29D55A1E19BB683900542E71 /* MoreTableView.swift in Sources */,
+				29D55A2219BB6FED00542E71 /* SideBarTabView.swift in Sources */,
 				29D55A0319BB62C900542E71 /* SecondViewController.swift in Sources */,
 				29D559FF19BB62C900542E71 /* AppDelegate.swift in Sources */,
 				29D55A0119BB62C900542E71 /* FirstViewController.swift in Sources */,
