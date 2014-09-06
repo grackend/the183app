@@ -16,11 +16,11 @@ class MoreTableView: UITableViewController, UITableViewDataSource, UITableViewDe
     
     
     
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return allTabTitles.count
     }
     
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("SideBarTabs") as UITableViewCell
         
         cell.textLabel!.text = allTabTitles[indexPath.row]
