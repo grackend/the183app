@@ -9,10 +9,22 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-                            
+    
+    @IBOutlet weak var webView: UIWebView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let fileBundle: NSBundle = .mainBundle()
+        
+        if let htmlFile = fileBundle.pathForResource("calendar", ofType: "html") {
+            let syllabusURL = NSURL(fileURLWithPath: htmlFile),
+            syllabusRequest = NSURLRequest(URL: syllabusURL)
+            
+            webView!.loadRequest(syllabusRequest)
+        }
     }
 
     override func didReceiveMemoryWarning() {
