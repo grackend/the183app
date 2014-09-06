@@ -1,0 +1,1 @@
+This is an iOS application for the University of Michigan's EECS 183 course
