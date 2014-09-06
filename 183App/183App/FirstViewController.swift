@@ -18,10 +18,14 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let syllabusURLString = "https://google.com",
-            syllabusURL = NSURL(string: syllabusURLString),
-            syllabusRequest = NSURLRequest(URL: syllabusURL)
-        webView!.loadRequest(syllabusRequest)
+        let fileBundle: NSBundle = .mainBundle()
+        
+        if let htmlFile = fileBundle.pathForResource("syllabus", ofType: "html") {
+            let syllabusURL = NSURL(fileURLWithPath: htmlFile),
+                syllabusRequest = NSURLRequest(URL: syllabusURL)
+            
+            webView!.loadRequest(syllabusRequest)
+        }
     }
 
     override func didReceiveMemoryWarning() {

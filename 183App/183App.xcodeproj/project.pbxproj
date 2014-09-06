@@ -15,6 +15,7 @@
 		29D55A1419BB62C900542E71 /* _83AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D55A1319BB62C900542E71 /* _83AppTests.swift */; };
 		29D55A1E19BB683900542E71 /* MoreTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D55A1D19BB683900542E71 /* MoreTableView.swift */; };
 		29D55A2219BB6FED00542E71 /* SideBarTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D55A2119BB6FED00542E71 /* SideBarTabView.swift */; };
+		29D55A2419BB82E900542E71 /* syllabus.html in Resources */ = {isa = PBXBuildFile; fileRef = 29D55A2319BB82E900542E71 /* syllabus.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		29D55A1319BB62C900542E71 /* _83AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _83AppTests.swift; sourceTree = "<group>"; };
 		29D55A1D19BB683900542E71 /* MoreTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableView.swift; sourceTree = "<group>"; };
 		29D55A2119BB6FED00542E71 /* SideBarTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTabView.swift; sourceTree = "<group>"; };
+		29D55A2319BB82E900542E71 /* syllabus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = syllabus.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		29D559FB19BB62C900542E71 /* 183App */ = {
 			isa = PBXGroup;
 			children = (
+				29D55A2319BB82E900542E71 /* syllabus.html */,
 				29D559FE19BB62C900542E71 /* AppDelegate.swift */,
 				29D55A0019BB62C900542E71 /* FirstViewController.swift */,
 				29D55A0219BB62C900542E71 /* SecondViewController.swift */,
@@ -200,6 +203,7 @@
 			files = (
 				29D55A0619BB62C900542E71 /* Main.storyboard in Resources */,
 				29D55A0819BB62C900542E71 /* Images.xcassets in Resources */,
+				29D55A2419BB82E900542E71 /* syllabus.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
