@@ -73,61 +73,6 @@
             </objects>
             <point key="canvasLocation" x="750" y="293"/>
         </scene>
-        <!--More Table View-->
-        <scene sceneID="TvS-NI-4Zd">
-            <objects>
-                <tableViewController id="HTx-D3-Ity" customClass="MoreTableView" customModule="_83App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IWt-8m-rSS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideBarTabs" id="HWa-wM-NHB">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWa-wM-NHB" id="lpj-kX-1iM">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="z6I-i9-pLh" kind="presentation" id="dcG-xN-LAD"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="HTx-D3-Ity" id="s36-oV-n0e"/>
-                            <outlet property="delegate" destination="HTx-D3-Ity" id="BOH-EQ-CwF"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="mQr-EP-pz3"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vul-Uh-8pq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1562" y="1090"/>
-        </scene>
-        <!--Side Bar Tab View-->
-        <scene sceneID="cWQ-OQ-P31">
-            <objects>
-                <viewController id="7t0-w1-109" customClass="SideBarTabView" customModule="_83App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sLh-wT-Op4"/>
-                        <viewControllerLayoutGuide type="bottom" id="TfP-bI-aBd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9ht-53-Kd6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="asy-hi-0uF">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="X95-V7-g3B">
-                            <connections>
-                                <action selector="back:" destination="7t0-w1-109" id="phh-MO-wVJ"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HU4-Gq-fh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3156" y="1090"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -148,25 +93,6 @@
             </objects>
             <point key="canvasLocation" x="-124" y="293"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="RVY-Rk-cYi">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ivc-51-vao" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="iX8-fX-ynJ"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jhv-aK-j5g">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="HTx-D3-Ity" kind="relationship" relationship="rootViewController" id="206-Qd-f1t"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rl5-iP-meE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="1090"/>
-        </scene>
         <!--More-->
         <scene sceneID="Xpk-kp-nex">
             <objects>
@@ -179,98 +105,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C44-dq-g0N" userLabel="Calendar">
-                                <rect key="frame" x="113" y="-152" width="106" height="103"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt3-cy-iKd" userLabel="Calendar">
+                                <rect key="frame" x="478" y="28" width="106" height="99"/>
                                 <accessibility key="accessibilityConfiguration" label="Calendar"/>
-                                <state key="normal" title="Calendar">
+                                <state key="normal" image="Clock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-3Q-4r8">
-                                <rect key="frame" x="0.0" y="-8" width="600" height="600"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR0-0A-G5e" userLabel="Calendar">
-                                        <rect key="frame" x="31" y="314" width="106" height="103"/>
-                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
-                                        <state key="normal" title="Calendar" image="Piazza">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-nf-bQ7" userLabel="Calendar">
-                                        <rect key="frame" x="184" y="118" width="106" height="103"/>
-                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
-                                        <state key="normal" title="Calendar" image="Staff">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-Uv-cnc" userLabel="Calendar">
-                                        <rect key="frame" x="190" y="307" width="94" height="117"/>
-                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
-                                        <state key="normal" title="Calendar" image="Projects">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Office Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8q-nO-dmm">
-                                        <rect key="frame" x="36" y="229" width="96" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Staff" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYN-Li-DkZ">
-                                        <rect key="frame" x="216" y="229" width="36" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Piazza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpQ-EX-qNq">
-                                        <rect key="frame" x="59" y="425" width="50" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOp-WA-xDh">
-                                        <rect key="frame" x="206" y="425" width="63" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt3-cy-iKd" userLabel="Calendar">
-                                        <rect key="frame" x="31" y="120" width="106" height="99"/>
-                                        <accessibility key="accessibilityConfiguration" label="Calendar"/>
-                                        <state key="normal" title="Calendar" image="Clock">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.74457310604890004" green="0.96980507523140524" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-Uv-cnc" userLabel="Calendar">
+                                <rect key="frame" x="16" y="20" width="94" height="117"/>
+                                <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                <state key="normal" image="Projects">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Projects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOp-WA-xDh">
+                                <rect key="frame" x="32" y="135" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piazza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpQ-EX-qNq">
+                                <rect key="frame" x="38" y="512" width="50" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staff" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYN-Li-DkZ">
+                                <rect key="frame" x="513" y="512" width="36" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-nf-bQ7" userLabel="Calendar">
+                                <rect key="frame" x="478" y="414" width="106" height="103"/>
+                                <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                <state key="normal" image="Staff">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR0-0A-G5e" userLabel="Calendar">
+                                <rect key="frame" x="16" y="419" width="106" height="98"/>
+                                <accessibility key="accessibilityConfiguration" label="Calendar"/>
+                                <state key="normal" image="Piazza">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8q-nO-dmm">
+                                <rect key="frame" x="483" y="135" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.57163049314886261" green="0.98673476324637643" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="b8q-nO-dmm" secondAttribute="trailing" constant="5" id="0vX-6s-5BY"/>
+                            <constraint firstItem="NR0-0A-G5e" firstAttribute="leading" secondItem="xzy-Rp-cpd" secondAttribute="leadingMargin" id="16g-30-omy"/>
+                            <constraint firstItem="pVm-Uv-cnc" firstAttribute="top" secondItem="8eT-N5-yDn" secondAttribute="bottom" id="2vp-pC-Ch7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xYN-Li-DkZ" secondAttribute="trailing" constant="35" id="6IB-zt-AGD"/>
+                            <constraint firstItem="b8q-nO-dmm" firstAttribute="top" secondItem="8eT-N5-yDn" secondAttribute="bottom" constant="115" id="CuQ-Nm-9aO"/>
+                            <constraint firstItem="cA2-QN-nV4" firstAttribute="top" secondItem="xYN-Li-DkZ" secondAttribute="bottom" constant="18.5" id="Evd-9N-PpY"/>
+                            <constraint firstItem="zOp-WA-xDh" firstAttribute="leading" secondItem="xzy-Rp-cpd" secondAttribute="leadingMargin" constant="16" id="Gex-HS-1ES"/>
+                            <constraint firstItem="cA2-QN-nV4" firstAttribute="top" secondItem="6mZ-nf-bQ7" secondAttribute="bottom" constant="34" id="PNa-f5-P5o"/>
+                            <constraint firstItem="cA2-QN-nV4" firstAttribute="top" secondItem="NR0-0A-G5e" secondAttribute="bottom" constant="34" id="Qne-nE-wng"/>
+                            <constraint firstItem="cA2-QN-nV4" firstAttribute="top" secondItem="CpQ-EX-qNq" secondAttribute="bottom" constant="18.5" id="eK4-Zs-XyG"/>
+                            <constraint firstItem="6mZ-nf-bQ7" firstAttribute="trailing" secondItem="xzy-Rp-cpd" secondAttribute="trailingMargin" id="eyt-zH-RBT"/>
+                            <constraint firstItem="CpQ-EX-qNq" firstAttribute="leading" secondItem="xzy-Rp-cpd" secondAttribute="leadingMargin" constant="22" id="gCV-cA-yfF"/>
+                            <constraint firstItem="tt3-cy-iKd" firstAttribute="trailing" secondItem="xzy-Rp-cpd" secondAttribute="trailingMargin" id="hOX-cY-Sum"/>
+                            <constraint firstItem="tt3-cy-iKd" firstAttribute="top" secondItem="xzy-Rp-cpd" secondAttribute="topMargin" constant="28" id="lmW-qt-cgo"/>
+                            <constraint firstItem="zOp-WA-xDh" firstAttribute="top" secondItem="8eT-N5-yDn" secondAttribute="bottom" constant="115" id="qKZ-gf-sYE"/>
+                            <constraint firstItem="pVm-Uv-cnc" firstAttribute="leading" secondItem="xzy-Rp-cpd" secondAttribute="leadingMargin" id="ztB-oP-Ce1"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="4zU-68-tbT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="678-HN-Cxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-124" y="1090"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="OUy-Ed-ulO">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z6I-i9-pLh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Y8-DQ-k6Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7t0-w1-109" kind="relationship" relationship="rootViewController" id="TKH-n9-bJL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2WY-hw-4RT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2344" y="1090"/>
         </scene>
     </scenes>
     <resources>
